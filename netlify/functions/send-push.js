@@ -19,7 +19,7 @@ exports.handler = async function(event, context) {
     const subscription = JSON.parse(event.body);
 
     // TODO: send push using web-push
-    // webpush.sendNotification(subscription, "Test message");
+     webpush.sendNotification(subscription, "Test message");
 
     return {
       statusCode: 200,
@@ -34,5 +34,6 @@ exports.handler = async function(event, context) {
     };
   }
 };
+
 
 
