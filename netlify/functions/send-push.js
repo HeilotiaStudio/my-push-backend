@@ -26,7 +26,7 @@ exports.handler = async function(event) {
 
     await webpush.sendNotification(subscription, JSON.stringify({
       title: "Hello!",
-      body: "This is a test push message",
+      body: "Test push message",
       icon: "https://heilotiastudio.github.io/MarkusPWA/apple-touch-icon.png"
     }));
 
@@ -36,6 +36,7 @@ exports.handler = async function(event) {
     return { statusCode: 500, body: JSON.stringify({ error: err.message }), headers };
   }
 };
+
 
 
 
